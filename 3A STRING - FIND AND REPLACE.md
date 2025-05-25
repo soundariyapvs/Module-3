@@ -1,30 +1,31 @@
 # Exp.No:3a
-## STRING - FIND AND REPLACE
+## STRING - String Slicing
 
----
+## Aim
+To create a Python function that accepts a string and prints the characters between positions 2 and 7 of that string.
 
-### AIM  
-To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
+## Algorithm
+1. Begin the program.
+2. Define a function `slice()` that:
+   - Takes a string as input.
+   - Slices the string from position 2 to 6.
+   - Prints the sliced substring.
+3. Read a string from the user using `input()`.
+4. Call the `slice()` function with the input string.
+5. Terminate the program.
 
----
-
-### ALGORITHM
-
-1. Begin the program.  
-2. Input the original string `str1` and the word to be replaced `replace_str`.  
-3. Ask the user to input the new replacement word `str2`.  
-4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
-5. Store the modified string in `str3`.  
-6. Display the original string (`str1`) and the modified string (`str3`).  
-7. Terminate the program.
-
----
-
-### PROGRAM
-
+## Program
 ```
+def slice(input_string):
+    sliced_string = input_string[2:7]
+    print(f'The sliced string is \'{sliced_string}\'')
+
+n = input()  
+slice(n)  
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/6f992215-9467-4d7a-b948-6f84fccc8050)
 
 ### RESULT
+Thus, the Python program was successfully executed to slice a string and print the characters between positions 2 and 7.
